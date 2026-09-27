@@ -1,0 +1,26 @@
+company,sub_issue,complaint_count,pct_of_bank_complaints_in_issue,small_sample
+AMERICAN EXPRESS COMPANY,Card opened without my consent or knowledge,195,0.503,False
+AMERICAN EXPRESS COMPANY,Application denied,141,0.363,False
+AMERICAN EXPRESS COMPANY,Delay in processing application,27,0.07,True
+AMERICAN EXPRESS COMPANY,Problem getting a working replacement card,16,0.041,True
+AMERICAN EXPRESS COMPANY,Sent card you never applied for,9,0.023,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Card opened without my consent or knowledge,185,0.529,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Application denied,82,0.234,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Delay in processing application,55,0.157,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Problem getting a working replacement card,16,0.046,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Sent card you never applied for,12,0.034,True
+CAPITAL ONE FINANCIAL CORPORATION,Card opened without my consent or knowledge,812,0.618,False
+CAPITAL ONE FINANCIAL CORPORATION,Application denied,257,0.196,False
+CAPITAL ONE FINANCIAL CORPORATION,Delay in processing application,90,0.069,True
+CAPITAL ONE FINANCIAL CORPORATION,Problem getting a working replacement card,80,0.061,True
+CAPITAL ONE FINANCIAL CORPORATION,Sent card you never applied for,74,0.056,True
+"CITIBANK, N.A.",Card opened without my consent or knowledge,521,0.557,False
+"CITIBANK, N.A.",Application denied,186,0.199,False
+"CITIBANK, N.A.",Problem getting a working replacement card,103,0.11,False
+"CITIBANK, N.A.",Delay in processing application,73,0.078,True
+"CITIBANK, N.A.",Sent card you never applied for,52,0.056,True
+JPMORGAN CHASE & CO.,Card opened without my consent or knowledge,257,0.472,False
+JPMORGAN CHASE & CO.,Application denied,205,0.376,False
+JPMORGAN CHASE & CO.,Delay in processing application,53,0.097,True
+JPMORGAN CHASE & CO.,Sent card you never applied for,16,0.029,True
+JPMORGAN CHASE & CO.,Problem getting a working replacement card,14,0.026,True

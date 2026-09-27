@@ -1,0 +1,6 @@
+data/complaints.db
+data/complaints_export.csv
+__pycache__/
+*.pyc
+.venv/
+venv/

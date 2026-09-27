@@ -1,0 +1,76 @@
+company,issue,complaint_count,pct_of_bank_complaints,small_sample
+AMERICAN EXPRESS COMPANY,Problem with a purchase shown on your statement,1965,0.346,False
+AMERICAN EXPRESS COMPANY,"Other features, terms, or problems",941,0.166,False
+AMERICAN EXPRESS COMPANY,"Advertising and marketing, including promotional offers",534,0.094,False
+AMERICAN EXPRESS COMPANY,Fees or interest,507,0.089,False
+AMERICAN EXPRESS COMPANY,Closing your account,393,0.069,False
+AMERICAN EXPRESS COMPANY,Getting a credit card,388,0.068,False
+AMERICAN EXPRESS COMPANY,Trouble using your card,310,0.055,False
+AMERICAN EXPRESS COMPANY,Incorrect information on your report,245,0.043,False
+AMERICAN EXPRESS COMPANY,Problem when making payments,163,0.029,False
+AMERICAN EXPRESS COMPANY,Problem with a company's investigation into an existing problem,144,0.025,False
+AMERICAN EXPRESS COMPANY,Struggling to pay your bill,56,0.01,True
+AMERICAN EXPRESS COMPANY,Improper use of your report,16,0.003,True
+AMERICAN EXPRESS COMPANY,Credit monitoring or identity theft protection services,9,0.002,True
+AMERICAN EXPRESS COMPANY,Problem with fraud alerts or security freezes,3,0.001,True
+AMERICAN EXPRESS COMPANY,Unable to get your credit report or credit score,1,0.0,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Problem with a purchase shown on your statement,2672,0.456,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION","Other features, terms, or problems",624,0.106,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Fees or interest,445,0.076,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Problem when making payments,437,0.075,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Closing your account,349,0.06,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Getting a credit card,350,0.06,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Incorrect information on your report,341,0.058,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Problem with a company's investigation into an existing problem,254,0.043,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Trouble using your card,155,0.026,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION","Advertising and marketing, including promotional offers",127,0.022,False
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Struggling to pay your bill,82,0.014,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Credit monitoring or identity theft protection services,10,0.002,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Improper use of your report,11,0.002,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Problem with fraud alerts or security freezes,3,0.001,True
+"BANK OF AMERICA, NATIONAL ASSOCIATION",Unable to get your credit report or credit score,3,0.001,True
+CAPITAL ONE FINANCIAL CORPORATION,Problem with a purchase shown on your statement,4021,0.312,False
+CAPITAL ONE FINANCIAL CORPORATION,"Other features, terms, or problems",1668,0.129,False
+CAPITAL ONE FINANCIAL CORPORATION,Getting a credit card,1313,0.102,False
+CAPITAL ONE FINANCIAL CORPORATION,Closing your account,1150,0.089,False
+CAPITAL ONE FINANCIAL CORPORATION,Fees or interest,1114,0.086,False
+CAPITAL ONE FINANCIAL CORPORATION,Incorrect information on your report,921,0.071,False
+CAPITAL ONE FINANCIAL CORPORATION,Trouble using your card,691,0.054,False
+CAPITAL ONE FINANCIAL CORPORATION,Problem when making payments,609,0.047,False
+CAPITAL ONE FINANCIAL CORPORATION,"Advertising and marketing, including promotional offers",561,0.043,False
+CAPITAL ONE FINANCIAL CORPORATION,Problem with a company's investigation into an existing problem,437,0.034,False
+CAPITAL ONE FINANCIAL CORPORATION,Struggling to pay your bill,247,0.019,False
+CAPITAL ONE FINANCIAL CORPORATION,Improper use of your report,109,0.008,False
+CAPITAL ONE FINANCIAL CORPORATION,Credit monitoring or identity theft protection services,41,0.003,True
+CAPITAL ONE FINANCIAL CORPORATION,Problem with fraud alerts or security freezes,16,0.001,True
+CAPITAL ONE FINANCIAL CORPORATION,Unable to get your credit report or credit score,9,0.001,True
+"CITIBANK, N.A.",Problem with a purchase shown on your statement,4460,0.385,False
+"CITIBANK, N.A.","Other features, terms, or problems",1377,0.119,False
+"CITIBANK, N.A.",Fees or interest,1296,0.112,False
+"CITIBANK, N.A.",Closing your account,939,0.081,False
+"CITIBANK, N.A.",Getting a credit card,935,0.081,False
+"CITIBANK, N.A.",Problem when making payments,647,0.056,False
+"CITIBANK, N.A.",Trouble using your card,571,0.049,False
+"CITIBANK, N.A.","Advertising and marketing, including promotional offers",544,0.047,False
+"CITIBANK, N.A.",Incorrect information on your report,385,0.033,False
+"CITIBANK, N.A.",Problem with a company's investigation into an existing problem,245,0.021,False
+"CITIBANK, N.A.",Struggling to pay your bill,95,0.008,True
+"CITIBANK, N.A.",Improper use of your report,53,0.005,True
+"CITIBANK, N.A.",Credit monitoring or identity theft protection services,21,0.002,True
+"CITIBANK, N.A.",Problem with fraud alerts or security freezes,10,0.001,True
+"CITIBANK, N.A.",Unable to get your credit report or credit score,3,0.0,True
+JPMORGAN CHASE & CO.,Problem with a purchase shown on your statement,2288,0.331,False
+JPMORGAN CHASE & CO.,"Other features, terms, or problems",1416,0.205,False
+JPMORGAN CHASE & CO.,"Advertising and marketing, including promotional offers",569,0.082,False
+JPMORGAN CHASE & CO.,Getting a credit card,545,0.079,False
+JPMORGAN CHASE & CO.,Closing your account,489,0.071,False
+JPMORGAN CHASE & CO.,Fees or interest,435,0.063,False
+JPMORGAN CHASE & CO.,Incorrect information on your report,344,0.05,False
+JPMORGAN CHASE & CO.,Problem when making payments,243,0.035,False
+JPMORGAN CHASE & CO.,Trouble using your card,237,0.034,False
+JPMORGAN CHASE & CO.,Problem with a company's investigation into an existing problem,167,0.024,False
+JPMORGAN CHASE & CO.,Struggling to pay your bill,99,0.014,True
+JPMORGAN CHASE & CO.,Improper use of your report,53,0.008,True
+JPMORGAN CHASE & CO.,Credit monitoring or identity theft protection services,12,0.002,True
+JPMORGAN CHASE & CO.,Problem with fraud alerts or security freezes,4,0.001,True
+JPMORGAN CHASE & CO.,Unable to get your credit report or credit score,5,0.001,True

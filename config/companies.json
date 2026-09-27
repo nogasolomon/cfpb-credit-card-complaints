@@ -1,0 +1,10 @@
+{
+  "_comment": "Company names must match the CFPB API's exact 'company' field values. Verified against the live CFPB Consumer Complaint Database API (search_term lookups) on 2026-09-27. Add or remove banks here to change what the pipeline tracks.",
+  "companies": [
+    "JPMORGAN CHASE & CO.",
+    "BANK OF AMERICA, NATIONAL ASSOCIATION",
+    "CITIBANK, N.A.",
+    "AMERICAN EXPRESS COMPANY",
+    "CAPITAL ONE FINANCIAL CORPORATION"
+  ]
+}

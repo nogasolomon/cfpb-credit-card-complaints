@@ -1,0 +1,16 @@
+{
+  "_comment": "Product/sub-product filters that narrow the pull to credit card complaints only. CFPB renamed its product categories over time, so there are two: the retired 'Credit card' category (used before ~2018) and the current 'Credit card or prepaid card' category, which also covers non-credit products (prepaid, gift, payroll cards) that we exclude via sub_product. Verified against the live CFPB API on 2026-09-27.",
+  "products": [
+    {
+      "product": "Credit card",
+      "sub_products": null
+    },
+    {
+      "product": "Credit card or prepaid card",
+      "sub_products": [
+        "General-purpose credit card or charge card",
+        "Store credit card"
+      ]
+    }
+  ]
+}
