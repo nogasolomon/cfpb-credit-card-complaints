@@ -4,3 +4,11 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+.DS_Store
+
+# Google Sheets credentials and config -- NEVER commit these.
+config/sheets_config.json
+config/gcp_service_account_key.json
+*service_account*.json
+*.pem
+*.key

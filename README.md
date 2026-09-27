@@ -32,7 +32,11 @@ complaints in the dataset). Full write-up with numbers: [FINDINGS.md](FINDINGS.m
    each issue, and sub-issues for "getting a credit card") — each with a
    sample-size flag so a percentage from a handful of complaints doesn't
    get mistaken for a real signal.
-3. Findings from those tables are written up in plain language in
+3. **`src/push_to_sheets.py`** pushes each summary table to its own tab in
+   a Google Sheet, replacing that tab's contents each run. A Tableau Public
+   dashboard connects to that Sheet via Tableau's Google Drive connector.
+   See [Pushing to Google Sheets](#pushing-to-google-sheets) below for setup.
+4. Findings from those tables are written up in plain language in
    [FINDINGS.md](FINDINGS.md).
 
 Notable implementation detail: the CFPB API's documented pagination
@@ -69,18 +73,20 @@ column reserved for future use (see Limitations).
 
 ## Planned next steps
 
-- Push the summary tables to Google Sheets so a Tableau Public dashboard
-  can auto-refresh from them.
 - Backfill real complaint narratives (via CFPB's bulk CSV download, joined
   by complaint ID) and use them for AI-based complaint theme tagging.
+- Set up a schedule so `fetch_complaints.py` → `build_summaries.py` →
+  `push_to_sheets.py` runs regularly, keeping the Tableau Public dashboard's
+  source data current.
 
 ## Project structure
 
 ```
 cfpb_bank_complaints/
 ├── config/
-│   ├── companies.json      # list of banks to track (edit this to add/remove banks)
-│   └── products.json       # product/sub-product filters that narrow the pull to credit cards
+│   ├── companies.json              # list of banks to track (edit this to add/remove banks)
+│   ├── products.json               # product/sub-product filters that narrow the pull to credit cards
+│   └── sheets_config.example.json  # template for Google Sheets config (see below)
 ├── data/                    # created on first run; raw db/CSV are gitignored
 │   ├── complaints.db
 │   ├── complaints_export.csv
@@ -88,7 +94,8 @@ cfpb_bank_complaints/
 ├── src/
 │   ├── db.py                # SQLite table setup and helper functions
 │   ├── fetch_complaints.py  # main script: calls the API, saves data, exports CSV
-│   └── build_summaries.py   # derives dashboard-ready summary tables from the raw data
+│   ├── build_summaries.py   # derives dashboard-ready summary tables from the raw data
+│   └── push_to_sheets.py    # pushes summary tables to Google Sheets
 ├── requirements.txt
 ├── FINDINGS.md              # plain-language write-up of what the data shows
 └── README.md
@@ -128,6 +135,47 @@ runs are much faster since they only fetch new complaints.
 ```bash
 sqlite3 data/complaints.db "SELECT company, COUNT(*) FROM complaints GROUP BY company;"
 ```
+
+## Pushing to Google Sheets
+
+`src/push_to_sheets.py` uploads each CSV in `data/summaries/` to its own
+tab in a Google Sheet, using a Google Cloud service account. This requires
+one-time setup:
+
+1. Create a Google Cloud service account and download its JSON key.
+2. Create a Google Sheet and share it with that service account's email
+   address (Editor access).
+3. Copy `config/sheets_config.example.json` to `config/sheets_config.json`
+   and fill in your Sheet's ID and the path to your downloaded key file.
+
+Both `sheets_config.json` and the key file are gitignored and must never be
+committed — anyone with the key file can read/write your Sheet. Full
+click-by-click setup instructions aren't included here since they involve
+account-specific screens; ask for a walkthrough if you're setting this up
+for the first time.
+
+Once configured, run:
+
+```bash
+python src/push_to_sheets.py
+```
+
+Each run replaces every tab's contents with the current summary data —
+running it repeatedly never duplicates rows.
+
+**Before committing anything after working with this script**, double-check
+that `git status` doesn't show `sheets_config.json` or your key file as
+untracked/staged. If either ever does, it means `.gitignore` didn't catch
+it — stop and fix `.gitignore` before committing.
+
+## Tableau Public dashboard
+
+Tableau Public's dedicated Google Sheets connector has been discontinued,
+but Tableau Public Desktop still has a **Google Drive** connector, which
+can browse to and open a spreadsheet stored in Drive (including one your
+Google account only has access to via sharing, like the Sheet
+`push_to_sheets.py` writes to). Connect to the Sheet through that
+connector, build views against each tab, and publish to Tableau Public.
 
 ## Adding or removing banks
 

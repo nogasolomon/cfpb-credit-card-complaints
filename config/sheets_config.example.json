@@ -1,0 +1,5 @@
+{
+  "_comment": "Copy this file to sheets_config.json (already gitignored) and fill in your own values. Never commit sheets_config.json or the service account key file.",
+  "spreadsheet_id": "PASTE_YOUR_GOOGLE_SHEET_ID_HERE",
+  "service_account_key_file": "config/gcp_service_account_key.json"
+}
